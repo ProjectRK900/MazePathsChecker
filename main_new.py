@@ -60,8 +60,7 @@ def check_answer(leng, list, mtrx, start, finish):
 
         # Проверка границ списка: на концах должны быть точки старта и финиша
         # Если финиш в начале списка, список реверсируется
-        if list[0][0] != i or list[0][1] != j:
-            if list[0][0] == endi and list[0][1] == endj and \
+        if list[0][0] == endi and list[0][1] == endj and \
                     list[len(list) - 1][0] == i and list[len(list) - 1][1] == j:
                 list.reverse()
             else:
